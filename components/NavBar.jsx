@@ -20,7 +20,7 @@ const NavBar = () => {
   //fetching photo details from flickr
   const fetch = async () => {
     const img = await axios.get(
-      `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=a856b9dec52b4f412babb3c0575f68d7&text=${Search}&per_page=20&page=1000&format=json&nojsoncallback=1`
+      `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=a4a70abe1593b0fea6a1ae0214e89190&text=${Search}&per_page=20&page=1000&format=json&nojsoncallback=1`
     );
     setImages(img.data.photos.photo);
   };

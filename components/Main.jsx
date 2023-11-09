@@ -27,7 +27,7 @@ const Main = () => {
     setLoading(true);
     try {
       const img = await axios.get(
-        `https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=a856b9dec52b4f412babb3c0575f68d7&per_page=20&page=200${CurrPage}&format=json&nojsoncallback=1`
+        `https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=a4a70abe1593b0fea6a1ae0214e89190&per_page=20&page=${CurrPage}&format=json&nojsoncallback=1`
       );
       const newdata = await img.data.photos.photo;
 
